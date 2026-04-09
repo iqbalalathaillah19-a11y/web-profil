@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iqbal Al Athaillah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      background: url('walpaper pm.jpg') no-repeat center center/cover;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 20px;
+      width: 340px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);} 
+      to {opacity: 1; transform: translateY(0);} 
+    }
+
+    img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid white;
+      object-fit: cover;
+    }
+
+    h1 { margin: 10px 0; }
+
+    p {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    .link {
+      display: block;
+      background: white;
+      color: #333;
+      text-decoration: none;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      transition: 0.3s;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .link:hover {
+      background: #ddd;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="image.png" alt="Foto Profil">
+    <h1>Iqbal Al Athaillah</h1>
+    <p>Selamat datang di profil saya 👋</p>
+
+    <a class="link" href="https://wa.me/6281257177323" target="_blank">💬 WhatsApp</a>
+    <a class="link" href="https://tiktok.com/@tawaktarus" target="_blank">🎵 TikTok</a>
+    <a class="link" href="https://instagram.com/tawaktarus" target="_blank">📸 Instagram</a>
+
+    <!-- Free Fire ID dengan tombol copy -->
+    <div class="link" onclick="copyFF()">🎮 FF ID: 2499019289 (Klik untuk copy)</div>
+
+    <!-- Donasi DANA -->
+    <a class="link" href="https://link.dana.id/qr/081257177323" target="_blank">💰 Donasi via DANA (All Payment)</a>
+
+    <footer>
+      © 2026 Iqbal
+    </footer>
+  </div>
+
+  <script>
+    function copyFF() {
+      navigator.clipboard.writeText("2499019289");
+      alert("ID Free Fire berhasil disalin!");
+    }
+  </script>
+</body>
+</html>
